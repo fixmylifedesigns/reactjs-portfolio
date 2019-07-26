@@ -1,0 +1,14 @@
+.Nav-container{
+    display:flex;
+    justify-content: space-between;
+    width:1280px;
+    margin:auto;
+    height: 70px;
+    align-content: center;
+}
+.nav-link{
+    text-decoration: none;
+    color:white;
+    font-size:30px;
+    margin:10px 10px;
+}

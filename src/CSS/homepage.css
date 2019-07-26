@@ -1,0 +1,130 @@
+.intro {
+  /* border:red solid 1px;    */
+  margin: auto;
+  /* width:1280px; */
+  display: flex;
+  margin: auto;
+  flex-direction: column;
+  /* align-content: center; */
+}
+.dark {
+  background-color: #282c34;
+  width: 100%;
+  height: 100vh;
+  min-height: 600px
+  /* border: red solid 1px; */
+  
+}
+.font-dark {
+    color: #282c34
+}
+.light {
+  background-color: white;
+  width: 100%;
+  height: 100vh;
+  min-height: 600px
+}
+.font-light {
+color:white
+}
+.all-content {
+  display: flex;
+  /* flex-direction: column */
+}
+.section-container {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  /* margin: 20vh auto; */
+  margin: auto;
+  align-content: center;
+  /* border: red solid 1px; */
+
+}
+
+.intro-text {
+  color: white;
+  margin: auto 20px;
+  text-align: center;
+}
+
+.intro-text h1 {
+  font-size: 50px;
+}
+
+.intro-text h3 {
+  font-size: 30px;
+}
+
+.portrait {
+  margin: auto 20px;
+  border-radius: 100%;
+  width: 400px;
+  height: 400px;
+}
+@media only screen and (max-width: 400px) {
+  .portrait {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+.navigation {
+  margin-top: 20px;
+  text-align: center;
+  /* border: red solid 1px; */
+}
+.navigation a {
+  /* text-decoration: none; */
+  color: white;
+  font-size: 30px;
+  margin: 0 20px;
+}
+
+.title{
+    font-size:50px;
+    text-align: center;
+    /* border-bottom:solid black 10px; */
+
+}
+
+.cards-container{
+    display: flex;
+    /* align-content: center; */
+    margin:auto;
+    /* border:solid black 10px; */
+    width:1280px;
+
+}
+.card{
+    margin:auto;
+    padding:10px;
+}
+.map-contact-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin:auto;
+
+}
+@media only screen and (max-width: 400px) {
+  .map-contact-container {
+    flex-direction: column
+  }
+}
+.googlemap{
+width: 400px;
+height: 400px;
+padding:30px;
+}
+.form-container{
+    justify-content: center;
+  /* margin:auto */
+}
+.form{
+  padding:30px;
+  /* width: 45%; */
+  display: flex;
+  flex-direction: column;
+
+}

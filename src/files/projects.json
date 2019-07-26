@@ -1,0 +1,31 @@
+{
+  "projects": [
+    {
+      "name": "Intelliflight",
+      "role": "Full Stack Developer",
+      "youtube": "https://www.youtube.com/watch?v=7UVnwE1ntwc",
+      "url": "https://www.intelliflight.app/",
+      "img": "",
+      "short_description": "Team Project, tasked to create a web application that allows pilots create pireps and route plans",
+      "full_description": ""
+    },
+    {
+      "name": "Artfolio",
+      "role": "Frontend Developer",
+      "youtube": "",
+      "url": "https://art-folio.netlify.com/",
+      "img": "",
+      "short_description": "Solo Project, tasked to create a web application that allows free users to view post and logged in users to publish and share their work",
+      "full_description": ""
+    },
+    {
+      "name": "Educell",
+      "role": "UI Developer",
+      "youtube": "",
+      "url": "https://educell-marketing.netlify.com/",
+      "img": "",
+      "short_description": "Solo Project, tasked to create a marketing page for a web application",
+      "full_description": ""
+    }
+  ]
+}
