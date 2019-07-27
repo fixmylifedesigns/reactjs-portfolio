@@ -23,11 +23,11 @@ export default function EducellCard() {
 
   return (
     <Card className={classes.card}>
-      <CardActionArea>
+      <CardActionArea href="https://educell-marketing.netlify.com/">
         <CardMedia
           className={classes.media}
           image={educell}
-          title="Contemplative Reptile"
+
         />
         <CardContent>
           <Typography gutterBottom variant="h5" component="h2">
@@ -50,8 +50,8 @@ export default function EducellCard() {
         >
           Website
         </Button>
-        <Button size="small" color="primary" href="#/educell">
-          Learn More
+        <Button size="small" color="primary" href="https://github.com/build-week-educell/marketing-page">
+          GitHub Repo
         </Button>
       </CardActions>
     </Card>

@@ -23,12 +23,8 @@ export default function IntelliFlightCard() {
 
   return (
     <Card className={classes.card}>
-      <CardActionArea>
-        <CardMedia
-          className={classes.media}
-          image={intelliflight}
-          title="Contemplative Reptile"
-        />
+      <CardActionArea href="https://www.intelliflight.app/">
+        <CardMedia className={classes.media} image={intelliflight} />
         <CardContent>
           <Typography gutterBottom variant="h5" component="h2">
             Intelliflight
@@ -49,8 +45,19 @@ export default function IntelliFlightCard() {
         >
           Website
         </Button>
-        <Button size="small" color="primary" href="#/intellifight">
-          Learn More
+        <Button
+          size="small"
+          color="primary"
+          href="https://github.com/labs13-intelliflight"
+        >
+          GitHub Repo
+        </Button>
+        <Button
+          size="small"
+          color="primary"
+          href="https://documenter.getpostman.com/view/7133880/S1TYVGJp?version=latest"
+        >
+          API Doc
         </Button>
       </CardActions>
     </Card>

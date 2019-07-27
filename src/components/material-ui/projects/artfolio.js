@@ -22,12 +22,11 @@ export default function ArtfolioCard() {
   const classes = useStyles();
 
   return (
-    <Card className={classes.card}>
-      <CardActionArea>
+    <Card className={classes.card} >
+      <CardActionArea href="https://art-folio.netlify.com/">
         <CardMedia
           className={classes.media}
           image={artfolio}
-          title="Contemplative Reptile"
         />
         <CardContent>
           <Typography gutterBottom variant="h5" component="h2">
@@ -48,8 +47,8 @@ export default function ArtfolioCard() {
         >
           Website
         </Button>
-        <Button size="small" color="primary" href="#/artfolio">
-          Learn More
+        <Button size="small" color="primary" href="https://github.com/lambda-art-portfolio/frontend/tree/master">
+          Github Repo
         </Button>
       </CardActions>
     </Card>
