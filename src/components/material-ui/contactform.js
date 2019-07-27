@@ -41,14 +41,19 @@ export default function ContactForm() {
   //   e.preventDefault();
   //   const { name, email, message } = values;
   // };
-  console.log(values);
+
+  console.log(process.env.REACT_APP_FORM_TOKEN);
+  console.log(process.env.REACT_APP_GOOGLE_KEY);
+  console.log(process.env.REACT_APP_FORM_TOKEN);
   return (
     <form
       className="flex"
       noValidate
       autoComplete="off"
       // onSubmit={handleSubmit}
-      action="https://getsimpleform.com/messages?form_api_token=befa6b93769b524273c1eb19debeedf1"
+      action={`https://getsimpleform.com/messages?form_api_token=${
+        process.env.REACT_APP_FORM_TOKEN
+      }`}
       method="post"
     >
       <TextField

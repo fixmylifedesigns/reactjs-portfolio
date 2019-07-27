@@ -5,8 +5,6 @@ import {
   withGoogleMap,
   // Marker
 } from "react-google-maps";
-
-
 function Map() {
 
   return (
