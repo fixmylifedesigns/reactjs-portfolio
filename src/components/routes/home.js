@@ -22,7 +22,7 @@ export default class Homepage extends Component {
               </div>
               <img src={portrait} alt="portrait" className="portrait" />
             </div>
-            <nav className="navigation">
+            <nav className="navigation none">
               <a href="#/resume">Resume</a>
               <a href="https://www.linkedin.com/in/irvingduran/">LinkedIn</a>
               <a href="https://github.com/fixmylifedesigns">GitHub</a>
