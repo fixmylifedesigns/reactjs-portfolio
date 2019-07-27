@@ -1,10 +1,14 @@
 import React from "react";
 import clsx from "clsx";
 import { makeStyles } from "@material-ui/core/styles";
-import MenuItem from "@material-ui/core/MenuItem";
 import TextField from "@material-ui/core/TextField";
+import Icon from "@material-ui/core/Icon";
+import Button from "@material-ui/core/Button";
 
 const useStyles = makeStyles(theme => ({
+  button: {
+    margin: theme.spacing(1)
+  },
   container: {
     display: "flex",
     flexWrap: "wrap"
@@ -33,19 +37,27 @@ export default function ContactForm() {
     setValues({ ...values, [name]: event.target.value });
   };
 
-  const handleSubmit = (e) => {
-    e.preventDefault()
-    const {name, email, message} = values
-  }
-console.log(values)
+  // const handleSubmit = e => {
+  //   e.preventDefault();
+  //   const { name, email, message } = values;
+  // };
+  console.log(values);
   return (
-    <form className="flex" noValidate autoComplete="off" onSubmit={handleSubmit}>
+    <form
+      className="flex"
+      noValidate
+      autoComplete="off"
+      // onSubmit={handleSubmit}
+      action="https://getsimpleform.com/messages?form_api_token=befa6b93769b524273c1eb19debeedf1"
+      method="post"
+    >
       <TextField
         id="filled-dense"
         label="Name"
         className={clsx(classes.textField, classes.dense)}
         margin="Name"
-        name="name"
+        type="text"
+        name="fullname"
         variant="filled"
         onChange={handleChange}
       />
@@ -72,6 +84,15 @@ console.log(values)
         name="message"
         onChange={handleChange}
       />
+      <Button
+        variant="contained"
+        color="primary"
+        className={classes.button}
+        type="submit"
+      >
+        Send
+        {/* <Icon className={classes.rightIcon}>send</Icon> */}
+      </Button>
     </form>
   );
 }

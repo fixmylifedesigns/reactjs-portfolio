@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 // import { Link } from "react-router-dom";
 import portrait from "../../images/portrait.jpg";
+import cartoon from '../../images/cartoon.jpg'
 import "../../CSS/homepage.css";
 import Map from "../googlemaps/map";
 import {
@@ -20,7 +21,7 @@ export default class Homepage extends Component {
                 <h1>Irving Duran </h1>
                 <h3>Full Stack Developer</h3>
               </div>
-              <img src={portrait} alt="portrait" className="portrait" />
+              <img src={cartoon} alt="portrait" className="portrait" />
             </div>
             <nav className="navigation none">
               <a href="#/resume">Resume</a>
@@ -74,17 +75,13 @@ export default class Homepage extends Component {
             <h1 className="title font-dark">CONTACT</h1>
           </div>
           <div className="map-contact-container">
-            <div className="googlemap">
+            {/* <div className="googlemap">
+              <h1 className="center">Where to find me</h1>
               <Map />
-            </div>
+            </div> */}
             <div className="form-container">
+              <h1 className="center">Get in touch</h1>
             <ContactForm/>
-              {/* <form className="form">
-                <input />
-                <input />
-                <input />
-                <button>submit</button>
-              </form> */}
             </div>
           </div>
         </section>
