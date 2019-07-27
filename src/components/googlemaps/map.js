@@ -4,9 +4,7 @@ import {
   withScriptjs,
   withGoogleMap,
   // Polygon,
-
-  Marker,
-  
+  Marker
 } from "react-google-maps";
 import markericon from "../../images/giphy.gif";
 function Map() {
@@ -22,15 +20,18 @@ function Map() {
   //     />
   //   );
   // };
+  const mapSettings = {
+    fullscreenControl: false,
+    zoomControl: false,
+    mapTypeControl: false,
+    zoom: false
+  };
   return (
     <div>
       <GoogleMap
         defaultZoom={13}
         defaultCenter={{ lat: 40.702, lng: -73.92 }}
-        defaultOptions={{fullscreenControl: false, zoomControl: false, mapTypeControl:false}}
-        
-        // defaultOptions={{styles: mapStyles}}
-        // {this.zipcode ()}
+        defaultOptions={ mapSettings }
       >
         {/* {BushwickPolygon()} */}
         <Marker
@@ -55,7 +56,6 @@ function Map() {
           //   setSelectedPirep(pirep);
           // }}
         />
-
       </GoogleMap>
     </div>
   );
