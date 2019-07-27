@@ -5,8 +5,8 @@ import {
   Homepage,
   Projects,
   NotFound,
-  Footer,
-  Navigationbar,
+  // Footer,
+  // Navigationbar,
   Resume
 } from "./components/storeRoutes/storeRoutes";
 function App() {

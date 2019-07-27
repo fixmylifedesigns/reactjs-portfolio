@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import portrait from "../../images/portrait.jpg";
 import "../../CSS/homepage.css";
 import Map from "../googlemaps/map";
@@ -8,12 +8,12 @@ import {
   ArtfolioCard,
   EducellCard
 } from "../storeRoutes/projects";
-
+import ContactForm from "../material-ui/contactform"
 export default class Homepage extends Component {
   render() {
     return (
       <div>
-        <section className="intro section dark">
+        <section id="header" className="intro section dark">
           <div className="section-container">
             <div className="all-content">
               <div className="intro-text">
@@ -23,31 +23,37 @@ export default class Homepage extends Component {
               <img src={portrait} alt="portrait" className="portrait" />
             </div>
             <nav className="navigation">
-              <Link to="/resume">Resume</Link>
-              <a href="">About Me</a>
-              <a href="">Projects</a>
-              <a href="">Contact</a>
+              <a href="#/resume">Resume</a>
+              <a href="https://www.linkedin.com/in/irvingduran/">LinkedIn</a>
+              <a href="https://github.com/fixmylifedesigns">GitHub</a>
+              <a href="https://www.fmlcycling.com/">Fixmylife Co.</a>
             </nav>
           </div>
         </section>
-        <section className="section light">
+        <section id="aboutme" className="section light">
           <div className="section-container">
             <h1 className="title font-dark">ABOUT ME</h1>
-            <div>
-              <h1>SKILLS</h1>
-              <h3>• HTML5 • CSS3 • Javascript ES5/ ES6 • Python</h3>
+            <div className="all-content">
+            <div className="skills">
+            
+              <div className="Languages">
+                <h1>CODE LANGUAGES</h1>
+                <h5>•HTML5 •CSS3 •Javascript ES5/ ES6 •Python</h5>
+              </div>
+              <div className="libraries">
+                <h1>FRAMEWORKS & LIBRARIES</h1>
+                <h5>
+                  •ReactJS •NodeJs •Express •LESS/SASS •Jest •React Testing
+                  Library •Material UI •React Google Maps •React Google Location
+                </h5>
+              </div>
             </div>
-            <div>
-              <h1>FRAMEWORKS & LIBRARIES</h1>
-              <h3>
-                • ReactJS • NodeJs • Express • LESS/SASS • Jest <br/>• React Testing
-                Library • Material UI <br/>• React Google Maps • React Google 
-                Location
-              </h3>
+            <div className="description">
+              <h1> Hi, I'm Irving a Fullstack Javascript developer. I first got into coding in 2017 when I started building gaming handhelds based off raspberry pi single board computers. My love for learning and creating has gotten me where I am today. </h1>
             </div>
-          </div>
+          </div></div>
         </section>
-        <section className="section dark">
+        <section id="recentprojects" className="section dark">
           <div className="section-container">
             <h1 className="title font-light ">RECENT PROJECTS</h1>
             <div className="cards-container">
@@ -63,7 +69,7 @@ export default class Homepage extends Component {
             </div>
           </div>
         </section>
-        <section className="section light">
+        <section id="contact" className="section light">
           <div className="section-container">
             <h1 className="title font-dark">CONTACT</h1>
           </div>
@@ -72,12 +78,13 @@ export default class Homepage extends Component {
               <Map />
             </div>
             <div className="form-container">
-              <form className="form">
+            <ContactForm/>
+              {/* <form className="form">
                 <input />
                 <input />
                 <input />
                 <button>submit</button>
-              </form>
+              </form> */}
             </div>
           </div>
         </section>
