@@ -24,8 +24,6 @@ function Map() {
     fullscreenControl: false,
     zoomControl: false,
     mapTypeControl: false,
-    zoom: false,
-    disableDoubleClickZoom: true,
   };
   return (
     <div>
@@ -69,6 +67,7 @@ export default function TestMap() {
       style={{
         overflow: "hidden",
         borderRadius: "20px",
+        border: "solid 5px #282c34",
         width: "100%",
         height: "100%"
       }}
