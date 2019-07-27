@@ -24,7 +24,8 @@ function Map() {
     fullscreenControl: false,
     zoomControl: false,
     mapTypeControl: false,
-    zoom: false
+    zoom: false,
+    disableDoubleClickZoom: false,
   };
   return (
     <div>
