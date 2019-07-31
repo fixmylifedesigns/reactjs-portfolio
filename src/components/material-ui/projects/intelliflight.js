@@ -31,7 +31,7 @@ export default function IntelliFlightCard() {
           </Typography>
           <Typography variant="body2" color="textSecondary" component="p">
             Team Project, tasked to create a web application that allows pilots
-            create pireps and route plans
+            to create pireps and route plans
             <br />
             <br />
           </Typography>

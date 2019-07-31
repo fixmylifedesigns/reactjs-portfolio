@@ -52,7 +52,7 @@ export default class Homepage extends Component {
               </div>
             </div>
             <div className="description">
-              <h1> Hi, I'm Irving a Fullstack Javascript developer. I first got into coding in 2017 when I started building gaming handhelds based off raspberry pi single board computers. My love for learning and creating has gotten me where I am today. </h1>
+              <h1> Hi, I'm Irving a Fullstack Javascript developer. I first got into coding in 2017 when I started building gaming handhelds based off Raspberry PI single board computers. My love for learning and creating has gotten me where I am today. </h1>
             </div>
           </div></div>
         </section>
