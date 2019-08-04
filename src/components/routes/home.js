@@ -92,7 +92,7 @@ export default class Homepage extends Component {
               <h1 className="center">Get in touch</h1>
               {/* <ContactForm /> */}
               <NetlifyContactForm />
-              {/* <form name="contact" method="POST" data-netlify="true">
+              <form name="contact" method="POST" data-netlify="true">
                 <p>
                   <label>
                     Your Name: <input type="text" name="name" />
@@ -120,7 +120,7 @@ export default class Homepage extends Component {
                 <p>
                   <button type="submit">Send</button>
                 </p>
-              </form> */}
+              </form>
             </div>
           </div>
         </section>
