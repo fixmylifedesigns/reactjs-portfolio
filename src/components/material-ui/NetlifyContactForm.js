@@ -64,7 +64,8 @@ export default function NetlifyContactForm() {
       action={`https://getsimpleform.com/messages?form_api_token=${
         process.env.REACT_APP_FORM_TOKEN
       }`}
-      method="post"
+      name="contact"
+      method="POST"
       data-netlify="true"
     >
       <TextField
