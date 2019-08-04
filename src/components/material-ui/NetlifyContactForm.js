@@ -4,6 +4,7 @@ import { makeStyles } from "@material-ui/core/styles";
 import TextField from "@material-ui/core/TextField";
 // import Icon from "@material-ui/core/Icon";
 import Button from "@material-ui/core/Button";
+import NetlifyForm from 'react-netlify-form'
 
 const encode = (data) => {
   return Object.keys(data)
@@ -56,61 +57,83 @@ export default function NetlifyContactForm() {
   };
 
   return (
-    <form
-      className="flex"
-      noValidate
-      autoComplete="off"
-      onSubmit={handleSubmit}
-      action={`https://getsimpleform.com/messages?form_api_token=${
-        process.env.REACT_APP_FORM_TOKEN
-      }`}
-      name="contact"
-      method="POST"
-      data-netlify
-    >
-      <TextField
-        id="filled-dense"
-        label="Name"
-        className={clsx(classes.textField, classes.dense)}
-        margin="Name"
-        type="text"
-        name="name"
-        variant="filled"
-        onChange={handleChange}
-      />
+    // <form
+    //   className="flex"
+    //   noValidate
+    //   autoComplete="off"
+    //   onSubmit={handleSubmit}
+    //   action={`https://getsimpleform.com/messages?form_api_token=${
+    //     process.env.REACT_APP_FORM_TOKEN
+    //   }`}
+    //   name="contact"
+    //   method="POST"
+    //   data-netlify
+    // >
+    //   <TextField
+    //     id="filled-dense"
+    //     label="Name"
+    //     className={clsx(classes.textField, classes.dense)}
+    //     margin="Name"
+    //     type="text"
+    //     name="name"
+    //     variant="filled"
+    //     onChange={handleChange}
+    //   />
 
-      <TextField
-        id="filled-dense"
-        label="Email"
-        className={clsx(classes.textField, classes.dense)}
-        type="email"
-        name="email"
-        margin="email"
-        variant="filled"
-        onChange={handleChange}
-      />
+    //   <TextField
+    //     id="filled-dense"
+    //     label="Email"
+    //     className={clsx(classes.textField, classes.dense)}
+    //     type="email"
+    //     name="email"
+    //     margin="email"
+    //     variant="filled"
+    //     onChange={handleChange}
+    //   />
 
-      <TextField
-        id="filled-dense-multiline"
-        label="Message"
-        className={clsx(classes.textField, classes.dense)}
-        margin="text"
-        variant="filled"
-        multiline
-        rowsMax="4"
-        name="message"
-        onChange={handleChange}
-      />
-      <Button
-        variant="contained"
-        color="primary"
-        className={classes.button}
-        type="submit"
-      >
-        Send
-        {/* <Icon className={classes.rightIcon}>send</Icon> */}
-      </Button>
-    </form>
+    //   <TextField
+    //     id="filled-dense-multiline"
+    //     label="Message"
+    //     className={clsx(classes.textField, classes.dense)}
+    //     margin="text"
+    //     variant="filled"
+    //     multiline
+    //     rowsMax="4"
+    //     name="message"
+    //     onChange={handleChange}
+    //   />
+    //   <Button
+    //     variant="contained"
+    //     color="primary"
+    //     className={classes.button}
+    //     type="submit"
+    //   >
+    //     Send
+    //     {/* <Icon className={classes.rightIcon}>send</Icon> */}
+    //   </Button>
+    // </form>
+    <NetlifyForm name='Contact Form'>
+  {({ loading, error, success }) => (
+    <div>
+      {loading &&
+        <div>Loading...</div>
+      }
+      {error &&
+        <div>Your information was not sent. Please try again later.</div>
+      }
+      {success &&
+        <div>Thank you for contacting us!</div>
+      }
+      {!loading && !success &&
+        <div>
+          <input type='text' name='Name' required />
+          <textarea name='Message' required />
+          <button>Submit</button>
+        </div>
+      }
+    </div>
+  )}
+</NetlifyForm>
   );
 }
 
