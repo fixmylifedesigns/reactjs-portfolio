@@ -5,6 +5,12 @@ import TextField from "@material-ui/core/TextField";
 // import Icon from "@material-ui/core/Icon";
 import Button from "@material-ui/core/Button";
 
+const encode = (data) => {
+  return Object.keys(data)
+      .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+      .join("&");
+}
+
 const useStyles = makeStyles(theme => ({
   button: {
     margin: theme.spacing(1)
@@ -25,7 +31,7 @@ const useStyles = makeStyles(theme => ({
   }
 }));
 
-export default function ContactForm() {
+export default function NetlifyContactForm() {
   const classes = useStyles();
   const [values, setValues] = React.useState({
     name: "",
@@ -33,8 +39,20 @@ export default function ContactForm() {
     message: ""
   });
 
-  const handleChange = name => event => {
+ const handleChange = name => event => {
     setValues({ ...values, [name]: event.target.value });
+  };
+
+ const handleSubmit = e => {
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: encode({ "form-name": "contact", ...values })
+    })
+      .then(() => alert("Success!"))
+      .catch(error => alert(error));
+
+    e.preventDefault();
   };
 
   return (
@@ -42,11 +60,11 @@ export default function ContactForm() {
       className="flex"
       noValidate
       autoComplete="off"
-      // onSubmit={handleSubmit}
-      action={`https://getsimpleform.com/messages?form_api_token=${
-        process.env.REACT_APP_FORM_TOKEN
-      }`}
-      method="post"
+      onSubmit={handleSubmit}
+      // action={`https://getsimpleform.com/messages?form_api_token=${
+      //   process.env.REACT_APP_FORM_TOKEN
+      // }`}
+      // method="post"
     >
       <TextField
         id="filled-dense"
@@ -93,3 +111,5 @@ export default function ContactForm() {
     </form>
   );
 }
+
+

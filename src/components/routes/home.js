@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 // import { Link } from "react-router-dom";
 // import portrait from "../../images/portrait.jpg";
-import cartoon from '../../images/cartoon.jpg'
+import cartoon from "../../images/cartoon.jpg";
 import "../../CSS/homepage.css";
 import Map from "../googlemaps/map";
 import {
@@ -9,8 +9,9 @@ import {
   ArtfolioCard,
   EducellCard
 } from "../storeRoutes/projects";
-import ContactForm from "../material-ui/contactform"
-import Footer from '../navigation/footer'
+import ContactForm from "../material-ui/contactform";
+import NetlifyContactForm from "../material-ui/NetlifyContactForm";
+import Footer from "../navigation/footer";
 
 export default class Homepage extends Component {
   render() {
@@ -37,24 +38,31 @@ export default class Homepage extends Component {
           <div className="section-container">
             <h1 className="title font-dark">ABOUT ME</h1>
             <div className="all-content">
-            <div className="skills">
-            
-              <div className="Languages">
-                <h1>CODE LANGUAGES</h1>
-                <h5>•HTML5 •CSS3 •Javascript ES5/ ES6 •Python</h5>
+              <div className="skills">
+                <div className="Languages">
+                  <h1>CODE LANGUAGES</h1>
+                  <h5>•HTML5 •CSS3 •Javascript ES5/ ES6 •Python</h5>
+                </div>
+                <div className="libraries">
+                  <h1>FRAMEWORKS & LIBRARIES</h1>
+                  <h5>
+                    •ReactJS •NodeJs •Express •LESS/SASS •Jest •React Testing
+                    Library •Material UI •React Google Maps •React Google
+                    Location
+                  </h5>
+                </div>
               </div>
-              <div className="libraries">
-                <h1>FRAMEWORKS & LIBRARIES</h1>
-                <h5>
-                  •ReactJS •NodeJs •Express •LESS/SASS •Jest •React Testing
-                  Library •Material UI •React Google Maps •React Google Location
-                </h5>
+              <div className="description">
+                <h1>
+                  {" "}
+                  Hi, I'm Irving a Fullstack Javascript developer. I first got
+                  into coding in 2017 when I started building gaming handhelds
+                  based off Raspberry PI single board computers. My love for
+                  learning and creating has gotten me where I am today.{" "}
+                </h1>
               </div>
             </div>
-            <div className="description">
-              <h1> Hi, I'm Irving a Fullstack Javascript developer. I first got into coding in 2017 when I started building gaming handhelds based off Raspberry PI single board computers. My love for learning and creating has gotten me where I am today. </h1>
-            </div>
-          </div></div>
+          </div>
         </section>
         <section id="recentprojects" className="section dark">
           <div className="section-container">
@@ -83,7 +91,8 @@ export default class Homepage extends Component {
             </div>
             <div className="form-container">
               <h1 className="center">Get in touch</h1>
-            <ContactForm/>
+              {/* <ContactForm/> */}
+              <NetlifyContactForm />
             </div>
           </div>
         </section>
