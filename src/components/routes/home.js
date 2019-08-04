@@ -1,6 +1,4 @@
 import React, { Component } from "react";
-// import { Link } from "react-router-dom";
-// import portrait from "../../images/portrait.jpg";
 import cartoon from "../../images/cartoon.jpg";
 import "../../CSS/homepage.css";
 import Map from "../googlemaps/map";
@@ -9,15 +7,16 @@ import {
   ArtfolioCard,
   EducellCard
 } from "../storeRoutes/projects";
-import ContactForm from "../material-ui/contactform";
-import NetlifyContactForm from "../material-ui/NetlifyContactForm";
+import NetlifyContactForm from '../material-ui/NetlifyContactForm'
+// import ContactForm from "../material-ui/contactform";
 import Footer from "../navigation/footer";
-
+import MobileMenu from "../material-ui/mobilemenu";
 export default class Homepage extends Component {
   render() {
     return (
       <div>
         <section id="header" className="intro section dark">
+          <MobileMenu classname="mobileMenu" />
           <div className="section-container">
             <div className="all-content">
               <div className="intro-text">
@@ -91,8 +90,8 @@ export default class Homepage extends Component {
             </div>
             <div className="form-container">
               <h1 className="center">Get in touch</h1>
-              <ContactForm/>
-              {/* <NetlifyContactForm /> */}
+              {/* <ContactForm /> */}
+              <NetlifyContactForm />
             </div>
           </div>
         </section>

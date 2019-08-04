@@ -91,6 +91,7 @@ const handleSubmit = e => {
         color="primary"
         className={classes.button}
         type="submit"
+        style={{background:"#282c34"}}
       >
         Send
         {/* <Icon className={classes.rightIcon}>send</Icon> */}

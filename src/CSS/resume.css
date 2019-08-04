@@ -6,4 +6,15 @@
 }
 .resume{
     margin: auto; 
+    /* width:100% */
+    width:850px;
+    height:1100px;
+}
+
+@media only screen and (max-width: 900px) {
+  .resume{
+    margin: auto; 
+    width:95%;
+    height:1120px;
+}
 }

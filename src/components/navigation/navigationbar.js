@@ -1,17 +1,18 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import "../../CSS/navigation.css";
-
+import MobileMenus from "../material-ui/mobilemenu"
 export default class Navigationbar extends Component {
   render() {
     return (
       <div className="Nav-container">
         <div>
-          <Link to="/" className="nav-link">
+          <Link to="/" className="nav-link-home">
             Irving Duran
           </Link>
         </div>
-        <div>
+        <MobileMenus classname="navMobileMenu"/>
+        <div className="nav-links-container">
           <Link to="/" className="nav-link">
             Home
           </Link>

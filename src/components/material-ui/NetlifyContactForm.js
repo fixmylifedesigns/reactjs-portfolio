@@ -43,17 +43,17 @@ export default function NetlifyContactForm() {
     setValues({ ...values, [name]: event.target.value });
   };
 
-//  const handleSubmit = e => {
-//     fetch("/", {
-//       method: "POST",
-//       headers: { "Content-Type": "application/x-www-form-urlencoded" },
-//       body: encode({ "form-name": "contact", ...values })
-//     })
-//       .then(() => alert("Success!"))
-//       .catch(error => alert(error));
+ const handleSubmit = e => {
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: encode({ "form-name": "contact", ...values })
+    })
+      .then(() => alert("Success!"))
+      .catch(error => alert(error));
 
-//     e.preventDefault();
-//   };
+    e.preventDefault();
+  };
 
   return (
     <form
