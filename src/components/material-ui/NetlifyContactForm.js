@@ -61,12 +61,12 @@ export default function NetlifyContactForm() {
       noValidate
       autoComplete="off"
       // onSubmit={handleSubmit}
-      action={`https://getsimpleform.com/messages?form_api_token=${
-        process.env.REACT_APP_FORM_TOKEN
-      }`}
+      // action={`https://getsimpleform.com/messages?form_api_token=${
+      //   process.env.REACT_APP_FORM_TOKEN
+      // }`}
       name="contact"
       method="POST"
-      data-netlify="true"
+      data-netlify
     >
       <TextField
         id="filled-dense"
