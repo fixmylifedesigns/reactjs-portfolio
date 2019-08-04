@@ -60,10 +60,10 @@ export default function NetlifyContactForm() {
       className="flex"
       noValidate
       autoComplete="off"
-      // onSubmit={handleSubmit}
-      // action={`https://getsimpleform.com/messages?form_api_token=${
-      //   process.env.REACT_APP_FORM_TOKEN
-      // }`}
+      onSubmit={handleSubmit}
+      action={`https://getsimpleform.com/messages?form_api_token=${
+        process.env.REACT_APP_FORM_TOKEN
+      }`}
       name="contact"
       method="POST"
       data-netlify

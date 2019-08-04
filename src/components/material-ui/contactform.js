@@ -37,12 +37,17 @@ export default function ContactForm() {
     setValues({ ...values, [name]: event.target.value });
   };
 
+const handleSubmit = e => {
+  e.prevent.default()
+  alert("thank you")
+}
+
   return (
     <form
       className="flex"
       noValidate
       autoComplete="off"
-      // onSubmit={handleSubmit}
+      onSubmit={handleSubmit}
       action={`https://getsimpleform.com/messages?form_api_token=${
         process.env.REACT_APP_FORM_TOKEN
       }`}

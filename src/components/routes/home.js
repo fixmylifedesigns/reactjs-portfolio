@@ -91,8 +91,8 @@ export default class Homepage extends Component {
             </div>
             <div className="form-container">
               <h1 className="center">Get in touch</h1>
-              {/* <ContactForm/> */}
-              <NetlifyContactForm />
+              <ContactForm/>
+              {/* <NetlifyContactForm /> */}
             </div>
           </div>
         </section>
