@@ -7,7 +7,7 @@ import {
   ArtfolioCard,
   EducellCard
 } from "../storeRoutes/projects";
-import NetlifyContactForm from '../material-ui/NetlifyContactForm'
+import NetlifyContactForm from "../material-ui/NetlifyContactForm";
 // import ContactForm from "../material-ui/contactform";
 import Footer from "../navigation/footer";
 import MobileMenu from "../material-ui/mobilemenu";
@@ -92,6 +92,35 @@ export default class Homepage extends Component {
               <h1 className="center">Get in touch</h1>
               {/* <ContactForm /> */}
               <NetlifyContactForm />
+              <form name="contact" method="POST" data-netlify="true">
+                <p>
+                  <label>
+                    Your Name: <input type="text" name="name" />
+                  </label>
+                </p>
+                <p>
+                  <label>
+                    Your Email: <input type="email" name="email" />
+                  </label>
+                </p>
+                <p>
+                  <label>
+                    Your Role:{" "}
+                    <select name="role[]" multiple>
+                      <option value="leader">Leader</option>
+                      <option value="follower">Follower</option>
+                    </select>
+                  </label>
+                </p>
+                <p>
+                  <label>
+                    Message: <textarea name="message" />
+                  </label>
+                </p>
+                <p>
+                  <button type="submit">Send</button>
+                </p>
+              </form>
             </div>
           </div>
         </section>

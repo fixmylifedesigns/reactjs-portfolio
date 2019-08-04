@@ -74,7 +74,7 @@ export default function NetlifyContactForm() {
         className={clsx(classes.textField, classes.dense)}
         margin="Name"
         type="text"
-        name="fullname"
+        name="name"
         variant="filled"
         onChange={handleChange}
       />
