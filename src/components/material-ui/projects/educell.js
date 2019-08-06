@@ -51,7 +51,7 @@ export default function EducellCard() {
           Website
         </Button>
         <Button size="small" color="primary" href="https://github.com/build-week-educell/marketing-page">
-          GitHub Repo
+          Repo
         </Button>
       </CardActions>
     </Card>

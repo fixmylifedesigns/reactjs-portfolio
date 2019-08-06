@@ -48,7 +48,7 @@ export default function ArtfolioCard() {
           Website
         </Button>
         <Button size="small" color="primary" href="https://github.com/lambda-art-portfolio/frontend/tree/master">
-          Github Repo
+          Repo
         </Button>
       </CardActions>
     </Card>

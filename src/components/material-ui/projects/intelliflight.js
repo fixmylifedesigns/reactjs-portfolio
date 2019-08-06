@@ -50,7 +50,7 @@ export default function IntelliFlightCard() {
           color="primary"
           href="https://github.com/labs13-intelliflight"
         >
-          GitHub Repo
+          Repo
         </Button>
         <Button
           size="small"
@@ -58,6 +58,13 @@ export default function IntelliFlightCard() {
           href="https://documenter.getpostman.com/view/7133880/S1TYVGJp?version=latest"
         >
           API Doc
+        </Button>
+        <Button
+          size="small"
+          color="primary"
+          href="https://youtu.be/7UVnwE1ntwc"
+        >
+          Demo
         </Button>
       </CardActions>
     </Card>
