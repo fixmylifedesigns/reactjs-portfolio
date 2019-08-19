@@ -3,6 +3,7 @@ import "../../CSS/resume.css";
 // import { Switch, Link } from "react-router-dom";
 import Navigationbar from "../navigation/navigationbar";
 import ResumeDownload from "../material-ui/resumebutton";
+import MobileResponsiveResume from './mobileResponsiveResume'
 export default class resume extends Component {
   render() {
     return (
@@ -13,13 +14,14 @@ export default class resume extends Component {
           
           <div className="resume">
             <ResumeDownload />
-            <iframe
+            {/* <iframe
               title="resume"
               src="https://resume.creddle.io/embed/6v3z8k47n2q"
               width="100%"
               height="100%"
               seamless
-            />
+            /> */}
+<MobileResponsiveResume />
           </div>
         </div>
     );
