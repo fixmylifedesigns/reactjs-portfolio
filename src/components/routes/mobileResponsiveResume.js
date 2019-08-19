@@ -11,84 +11,69 @@ export default function MobileResponsiveResume() {
               <h3 className="header-resume role">FULL STACK DEVELOPER</h3>
             </div>
             <div className="contact-section">
-              <a href="mailto:contact@duranirving.com" className="resume-link">
-                <p className="resumePTag">
-                  <i
-                    class="fa fa-envelope"
-                    style={{ fontSize: "12px", width: "12px" }}
-                  />{" "}
-                  contact@duranirving.com
-                </p>
+              <a
+                href="mailto:contact@duranirving.com"
+                className="resume-link resumePTag mobileLink"
+              >
+                <i
+                  className="fa fa-envelope link-icons"
+                />{" "}
+                contact@duranirving.com
               </a>
-              <a href="https://www.duranirving.com" className="resume-link">
-                <p className="resumePTag">
-                  {" "}
-                  <i
-                    class="fa fa-globe"
-                    style={{ fontSize: "12px", width: "12px" }}
-                  />{" "}
-                  duranirving.com{" "}
-                </p>
+              <a
+                href="https://www.duranirving.com"
+                className="resume-link resumePTag mobileLink"
+              >
+                {" "}
+                <i
+                className="fa fa-globe link-icons"
+                />{" "}
+                duranirving.com{" "}
               </a>
-              <a href="tel:347-265-5234" className="resume-link">
-                <p className="resumePTag">
-                  {" "}
-                  <i
-                    class="fa fa-phone"
-                    style={{ fontSize: "12px", width: "12px" }}
-                  />{" "}
-                  (347) 265-5234{" "}
-                </p>
+              <a href="tel:347-265-5234" className="resume-link resumePTag mobileLink">
+                {" "}
+                <i
+                className="fa fa-phone link-icons"
+                />{" "}
+                (347) 265-5234{" "}
               </a>
               <a
                 href="https://www.google.com/maps/place/Brooklyn,+NY/@40.6451594,-74.0850816,11z/data=!3m1!4b1!4m5!3m4!1s0x89c24416947c2109:0x82765c7404007886!8m2!3d40.6781784!4d-73.9441579"
-                className="resume-link"
+                className="resume-link resumePTag mobileLink"
               >
-                <p className="resumePTag">
-                  {" "}
-                  <i
-                    class="fa fa-map-marker"
-                    style={{ fontSize: "12px", width: "12px" }}
-                  />{" "}
-                  Brooklyn, New York{" "}
-                </p>
+                {" "}
+                <i
+                className="fa fa-map-marker link-icons"
+                />{" "}
+                Brooklyn, New York{" "}
               </a>
               <a
                 href="https://www.twitter.com/fixmylifenyc"
-                className="resume-link"
+                className="resume-link resumePTag mobileLink"
               >
-                <p className="resumePTag">
-                  {" "}
-                  <i
-                    class="fa fa-twitter"
-                    style={{ fontSize: "12px", width: "12px" }}
-                  />{" "}
-                  fixmylifenyc
-                </p>
+                {" "}
+                <i
+                className="fa fa-twitter link-icons"
+                />{" "}
+                fixmylifenyc
               </a>{" "}
               <a
                 href="https://www.linkedin.com/in/irvingduran"
-                className="resume-link"
+                className="resume-link resumePTag mobileLink"
               >
-                <p className="resumePTag">
-                  <i
-                    class="fa fa-linkedin"
-                    style={{ fontSize: "12px", width: "12px" }}
-                  />{" "}
-                  irvingduran{" "}
-                </p>
+                <i
+                className="fa fa-linkedin link-icons"
+                />{" "}
+                irvingduran{" "}
               </a>{" "}
               <a
                 href="https://www.github.com/fixmylifedesigns"
-                className="resume-link"
+                className="resume-link resumePTag mobileLink"
               >
-                <p className="resumePTag">
-                  <i
-                    class="fa fa-github"
-                    style={{ fontSize: "12px", width: "12px" }}
-                  />{" "}
-                  fixmylifedesigns
-                </p>
+                <i
+                className="fa fa-github link-icons"
+                />{" "}
+                fixmylifedesigns
               </a>
             </div>
           </div>
