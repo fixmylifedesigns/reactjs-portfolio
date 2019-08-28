@@ -4,7 +4,7 @@ import "../../CSS/homepage.css";
 import Map from "../googlemaps/map";
 import {
   IntelliFlightCard,
-  ArtfolioCard,
+  BrokenULock,
   EducellCard
 } from "../storeRoutes/projects";
 // import NetlifyContactForm from "../material-ui/NetlifyContactForm";
@@ -68,13 +68,13 @@ export default class Homepage extends Component {
             <h1 className="title font-light ">RECENT PROJECTS</h1>
             <div className="cards-container">
               <div className="card">
+                <BrokenULock />
+              </div>
+              <div className="card">
                 <IntelliFlightCard />
               </div>
               <div className="card">
                 <EducellCard />
-              </div>
-              <div className="card">
-                <ArtfolioCard />
               </div>
             </div>
           </div>
