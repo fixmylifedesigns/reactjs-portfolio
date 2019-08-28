@@ -197,16 +197,15 @@ export default function MobileResponsiveResume() {
             </div>
             <div className="project">
               <a href="https://art-folio.netlify.com" className="resume-link">
-                <p className="projectTitle">Artfolio</p>
+                <p className="projectTitle">Broken U-Lock</p>
               </a>
               <p className="skillPTag">
-                ReactJS | Material UI | Axios | Adobe Illustrator
+              Node | ReactJS | React Google Maps | Axios | PostgreSQL| Adobe Illustrator
               </p>
               <p className="skillPTag">
-                Web application that allows free users to view post and logged
-                in users to publish and share their work
+              Web application that allows free users to view post and logged in users to post, comment and receive notifications
               </p>
-              <p className="skillPTag">Role: Front-End Developer</p>
+              <p className="skillPTag">Role: Full Stack Developer</p>
               <p className="skillPTag">• Solo Project</p>
               <p className="skillPTag">
                 • Designed user interface including illustrations
