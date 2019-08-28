@@ -5,7 +5,7 @@ import {
   Homepage,
   Projects,
   NotFound,
-  // Footer,
+  Footer,
   // Navigationbar,
   Resume
 } from "./components/storeRoutes/storeRoutes";
@@ -22,7 +22,7 @@ function App() {
           <Route path="*" component={NotFound} />
         </Switch>
       </header>
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 }

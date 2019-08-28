@@ -1,0 +1,40 @@
+[
+  {
+    "display": 1,
+    "title": "Broken U-Lock",
+    "website": "https://www.brokenulock.com",
+    "img": "https://github.com/fixmylifedesigns/reactjs-portfolio/blob/master/src/images/projects/ulock.png?raw=true",
+    "description": "Independent Project, Web application that alows users to create an account and make posts to report stolen bicycles. Work in progress.",
+    "repo": "https://github.com/brokenulock",
+    "api": "https://documenter.getpostman.com/view/7133880/SVfMUAdJ?version=latest",
+    "demo": "https://youtu.be/reFElyEkXPg"
+  },
+  {
+    "display": 1,
+    "title": "Intelliflight",
+    "website": "https://www.intelliflight.app/",
+    "img": "https://github.com/fixmylifedesigns/reactjs-portfolio/blob/master/src/images/projects/intelliflight.png?raw=true",
+    "description": "Team Project, tasked to create a web application that allows pilots to create pireps and route plans.",
+    "repo": "https://github.com/labs13-intelliflight",
+    "api": "https://documenter.getpostman.com/view/7133880/S1TYVGJp?version=latest",
+    "demo": "https://youtu.be/7UVnwE1ntwc"
+  },
+
+  {
+    "display": 1,
+    "title": "Educell",
+    "website": "https://educell-marketing.netlify.com/",
+    "img": "https://github.com/fixmylifedesigns/reactjs-portfolio/blob/master/src/images/projects/educell.png?raw=true",
+    "description": "Solo Project, tasked to create a marketing page for a web application.",
+    "repo": "https://github.com/build-week-educell/marketing-page"
+  },
+
+  {
+    "display": 0,
+    "title": "Artfolio",
+    "website": "https://art-folio.netlify.com/",
+    "img": "https://github.com/fixmylifedesigns/reactjs-portfolio/blob/master/src/images/projects/artfolio.png?raw=true",
+    "description": "Solo Project, tasked to create a web application that allows free users to view post and logged in users to publish and share their work",
+    "repo": "https://github.com/lambda-art-portfolio/frontend/tree/master"
+  }
+]

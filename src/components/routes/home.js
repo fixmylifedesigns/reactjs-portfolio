@@ -2,15 +2,11 @@ import React, { Component } from "react";
 import cartoon from "../../images/cartoon.jpg";
 import "../../CSS/homepage.css";
 import Map from "../googlemaps/map";
-import {
-  IntelliFlightCard,
-  BrokenULock,
-  EducellCard
-} from "../storeRoutes/projects";
-// import NetlifyContactForm from "../material-ui/NetlifyContactForm";
+import ProjectCard from "../material-ui/projects/projectCard";
 import ContactForm from "../material-ui/contactform";
-import Footer from "../navigation/footer";
 import MobileMenu from "../material-ui/mobilemenu";
+import projectsData from "../../data/projectData.json";
+
 export default class Homepage extends Component {
   render() {
     return (
@@ -26,7 +22,7 @@ export default class Homepage extends Component {
               <img src={cartoon} alt="portrait" className="portrait" />
             </div>
             <nav className="navigation none">
-              <a href="#/resume">Resume</a>
+              <a href="/resume">Resume</a>
               <a href="https://www.linkedin.com/in/irvingduran/">LinkedIn</a>
               <a href="https://github.com/fixmylifedesigns">GitHub</a>
               <a href="https://www.fmlcycling.com/">Fixmylife Co.</a>
@@ -67,15 +63,23 @@ export default class Homepage extends Component {
           <div className="section-container">
             <h1 className="title font-light ">RECENT PROJECTS</h1>
             <div className="cards-container">
-              <div className="card">
-                <BrokenULock />
-              </div>
-              <div className="card">
-                <IntelliFlightCard />
-              </div>
-              <div className="card">
-                <EducellCard />
-              </div>
+              {projectsData
+                .filter(project => project.display > 0)
+                .map(project => {
+                  return (
+                    <div className="card">
+                      <ProjectCard
+                        title={project.title}
+                        url={project.website}
+                        description={project.description}
+                        img={project.img}
+                        demo={project.demo}
+                        api={project.api}
+                        repo={project.repo}
+                      />
+                    </div>
+                  );
+                })}
             </div>
           </div>
         </section>
@@ -91,11 +95,9 @@ export default class Homepage extends Component {
             <div className="form-container">
               <h1 className="center">Get in touch</h1>
               <ContactForm />
-              {/* <NetlifyContactForm /> */}
             </div>
           </div>
         </section>
-        <Footer />
       </div>
     );
   }
