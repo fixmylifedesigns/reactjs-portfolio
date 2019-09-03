@@ -1,3 +1,13 @@
+.newresume {
+  overflow: hidden;
+  height: 1150px;
+}
+.left-side {
+  min-height: 1150px;
+}
+.right-side {
+  min-height: 1150px;
+}
 .resume-container {
   background-color: #282c34;
   width: 100%;
@@ -8,7 +18,7 @@
   margin: auto;
   /* width:100% */
   width: 850px;
-  min-height: 1300px;
+  min-height: 1150px;
 }
 .resume-link {
   text-decoration: none;
@@ -31,6 +41,7 @@
 }
 
 .newresume {
+  height: auto;
   display: flex;
   overflow: hidden;
   min-height: 1040px;
@@ -60,6 +71,8 @@
   }
   .left-side {
     width: 100%;
+    height: auto;
+    min-height: 0;
   }
   .top-content {
     display: flex;
@@ -76,6 +89,7 @@
   }
   .all-skills {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
   }
 
@@ -206,7 +220,7 @@
     font-size: 18px;
   }
   .link-icons {
-    font-size:18px;
+    font-size: 18px;
     width: 18px;
   }
 }

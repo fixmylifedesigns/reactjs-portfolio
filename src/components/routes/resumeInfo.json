@@ -1,0 +1,232 @@
+{
+  "contact": [
+    {
+      "href": "mailto:contact@duranirving.com",
+      "class": "fa fa-envelope",
+      "link": "contact@duranirving.com"
+    },
+    {
+      "href": "https://www.duranirving.com",
+      "class": "fa fa-globe",
+      "link": "duranirving.com"
+    },
+    {
+      "href": "tel:347-265-5234",
+      "class": "fa fa-phone",
+      "link": "(347) 265-5234"
+    },
+    {
+      "href": "https://www.google.com/maps/place/Brooklyn,+NY/@40.6451594,-74.0850816,11z/data=!3m1!4b1!4m5!3m4!1s0x89c24416947c2109:0x82765c7404007886!8m2!3d40.6781784!4d-73.9441579",
+      "class": "fa fa-map-marker",
+      "link": "Brooklyn, New York"
+    },
+    {
+      "href": "https://www.twitter.com/fixmylifenyc",
+      "class": "fa fa-twitter",
+      "link": "fixmylifenyc"
+    },
+    {
+      "href": "https://www.linkedin.com/in/irvingduran",
+      "class": "fa fa-linkedin",
+      "link": "irvingduran"
+    },
+    {
+      "href": "https://www.github.com/fixmylifedesigns",
+      "class": "fa fa-github",
+      "link": "fixmylifedesigns"
+    }
+  ],
+  "skills_section_one": [
+    {
+      "title": "CODING LANGUAGES",
+      "skills": [
+        { "skill": "• HTML5" },
+        { "skill": "• CSS3" },
+        { "skill": "• Javascript ES5/ ES6" },
+        { "skill": "• Python" }
+      ]
+    },
+    {
+      "title": "FRAMEWORKS AND LIBRARIES",
+      "skills": [
+        { "skill": "• ReactJS" },
+        { "skill": "• NodeJs" },
+        { "skill": "• Express" },
+        { "skill": "• LESS/SASS" },
+        { "skill": "• Jest" },
+        { "skill": "• React Testing Library" },
+        { "skill": "• Material UI" },
+        { "skill": "• React Google Maps" },
+        { "skill": "• React Google Location" }
+      ]
+    },
+    {
+      "title": "TOOLS",
+      "skills": [
+        { "skill": "• Git" },
+        { "skill": "• GitHub" },
+        { "skill": "• Heroku" },
+        { "skill": "• Netlify" },
+        { "skill": "• Render" },
+        { "skill": "• VS Code" },
+        { "skill": "• Atom" },
+        { "skill": "• Windows 10 OS" },
+        { "skill": "• Terminal" },
+        { "skill": "• Linux" }
+      ]
+    }
+  ],
+  "skills_section_two": [
+    {
+      "title": "SOFT SKILLS",
+      "skills": [
+        { "skill": "• Problem Solving" },
+        { "skill": "• Time Management" },
+        { "skill": "• Leadership" },
+        { "skill": "• Creative Thinking" }
+      ]
+    },
+    {
+      "title": "DATABASES",
+      "skills": [{ "skill": "• SQLite" }, { "skill": "• PostgreSQL" }]
+    },
+    {
+      "title": "SOFTWARE DEVELOPMENT",
+      "skills": [
+        { "skill": "• RESTful APIs" },
+        { "skill": "• Object Oriented Programming" },
+        { "skill": "• AGILE Development" }
+      ]
+    },
+    {
+      "title": "LANGUAGES",
+      "skills": [
+        { "skill": "• English ★★★★★" },
+        { "skill": "• Spanish ★★★★★" },
+        { "skill": "• French  ★☆☆☆☆" }
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "title": "Educell",
+      "url": "https://educell-marketing.netlify.com/",
+      "skills": [
+        { "line": "HTML | CSS w/ LESS | Javascript | Adobe Illustrator" },
+        { "line": "Marketing page for a web application" },
+        { "line": "Role: UI Developer" },
+        { "line": "• Solo Project" },
+        {
+          "line": "• Designed user interface including illustrations, fonts and color scheme"
+        },
+        { "line": "• Responsive View for desktop, tablet and mobile" }
+      ]
+    },
+    {
+      "title": "Intelliflight",
+      "url": "https://www.intelliflight.app",
+      "skills": [
+        {
+          "line": "Node | ReactJS | React Google Maps | Axios | Auth0 | Adobe Illustrator"
+        },
+        {
+          "line": "Web application that allows pilots to create pireps and route plans"
+        },
+        { "line": "Role: Full Stack Developer" },
+        { "line": "• Team Project" },
+        { "line": "• Designed user interface including illustrations" },
+        { "line": "• Responsive View for desktop, tablet and mobile" },
+        { "line": "• Responsive View for desktop, tablet and mobile" },
+        { "line": "• Integrated google maps" },
+        {
+          "line": " • Set up backend database with endpoints and documentation"
+        }
+      ]
+    },
+    {
+      "title": "Broken U-Lock",
+      "url": "https://art-folio.netlify.com",
+      "skills": [
+        {
+          "line": "Node | ReactJS | React Google Maps | Axios | PostgreSQL| Adobe Illustrator"
+        },
+        {
+          "line": "Web application that allows free users to view post and logged in users to post, comment and receive notifications"
+        },
+        { "line": "Role: Full Stack Developer" },
+        { "line": "• Solo Project" },
+        { "line": "• Designed user interface including illustrations" },
+        { "line": "• Responsive View for desktop, tablet and mobile" },
+        { "line": "• Register and validating login" },
+        {
+          "line": "• Axios calls to back-end api for storing data and user information"
+        }
+      ]
+    }
+  ],
+  "employment": [
+    {
+      "employeer": "Lambda School",
+      "title": "",
+      "info": [{ "line": "Remote" }, { "line": "May 2019 to Current" }],
+      "description": [
+        {
+          "line": "• Manage a small group of students by taking attendance and grading"
+        },
+        { "line": "• Mentor students to achieve good coding practices" }
+      ]
+    },
+    {
+      "employeer": "Fix My Life",
+      "title": "Founder",
+      "info": [
+        { "line": "https://www.fmlcycling.com/" },
+        { "line": "Dec. 2013 to Current" }
+      ],
+      "description": [
+        {
+          "line": "• Build long-term customer relationships and advise customers on purchases"
+        },
+        {
+          "line": "• Routinely answered customer questions regarding merchandise and pricing"
+        },
+        {
+          "line": "• Develop reputation as an efficient service provider with high levels of accuracy"
+        }
+      ]
+    },
+    {
+      "employeer": "Deliv co",
+      "title": "Independent Contractor",
+      "info": [
+        { "line": "New York, New York" },
+        { "line": "Apr. 2016 to Jan. 2019" }
+      ],
+      "description": [
+        {
+          "line": "• Make deliveries and pick-ups of items as requested"
+        },
+        {
+          "line": "• Establish excellent working relationships at all delivery and pickup points"
+        }
+      ]
+    }
+  ],
+  "education": [
+    {
+      "school": "Lambda School",
+      "duration": "Feb. 2019 to Sept. 2019",
+      "certification": "Certificate of Completion Web Development & Computer Science"
+    },
+    {
+      "school": "New York Code + Design Academy",
+      "duration": "May 2018 to June 2018",
+      "certification": "Web Development Foundation 2018"
+    },
+    {
+      "school": "Borough of Manhattan Community College",
+      "duration": "Fall 2012 to Fall 2015",
+      "certification": "Associates 32 credits completed towards Business Administration"
+    }
+  ]
+}
