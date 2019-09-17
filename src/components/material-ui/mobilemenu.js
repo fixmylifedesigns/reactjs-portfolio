@@ -75,12 +75,12 @@ export default function MobileMenus(props) {
         onClose={handleClose}
       >
         <StyledMenuItem>
-          <a href="#/" style={linkStyle}>
+          <a href="/" style={linkStyle}>
             Home
           </a>
         </StyledMenuItem>
         <StyledMenuItem>
-          <a href="#/resume" style={linkStyle}>
+          <a href="/resume" style={linkStyle}>
             Resume
           </a>
         </StyledMenuItem>
