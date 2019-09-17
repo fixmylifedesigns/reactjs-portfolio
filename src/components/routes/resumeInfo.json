@@ -167,7 +167,7 @@
   "employment": [
     {
       "employeer": "Lambda School",
-      "title": "",
+      "title": "Team Lead, Full Stack Web Development",
       "info": [{ "line": "Remote" }, { "line": "May 2019 to Current" }],
       "description": [
         {
@@ -184,6 +184,9 @@
         { "line": "Dec. 2013 to Current" }
       ],
       "description": [
+        {
+          "line": "• Managing E-commerce Online Store"
+        },
         {
           "line": "• Build long-term customer relationships and advise customers on purchases"
         },
