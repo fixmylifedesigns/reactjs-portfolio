@@ -57,7 +57,10 @@
         { "skill": "• React Testing Library" },
         { "skill": "• Material UI" },
         { "skill": "• React Google Maps" },
-        { "skill": "• React Google Location" }
+        { "skill": "• React Google Location" },
+        { "skill": "• NextJs" },
+        { "skill": "• Gatsby" },
+        { "skill": "• Bootstrap" }
       ]
     },
     {
@@ -72,7 +75,9 @@
         { "skill": "• Atom" },
         { "skill": "• Windows 10 OS" },
         { "skill": "• Terminal" },
-        { "skill": "• Linux" }
+        { "skill": "• Linux" },
+        { "skill": "• Postman" },
+        { "skill": "• GitLab" }
       ]
     }
   ],
@@ -166,6 +171,25 @@
   ],
   "employment": [
     {
+      "employeer": "Connect Our Kids",
+      "title": "Team Lead, React Native Development",
+      "info": [{ "line": "Remote" }, { "line": "Oct. 2019 to Current" }],
+      "description": [
+        {
+          "line": "• Leading a team in the development of the react native application"
+        },
+        {
+          "line": "• Manage a team of 7-10 "
+        },
+        {
+          "line": "•  Work closely with HTML5, CSS3, Javascript ES5/ ES6, React js, React Native and Node js"
+        },
+        {
+          "line": "• Providing technical and team leadership through coaching and mentor-ship"
+        }
+      ]
+    },
+    {
       "employeer": "Lambda School",
       "title": "Team Lead, Full Stack Web Development",
       "info": [{ "line": "Remote" }, { "line": "May 2019 to Current" }],
@@ -195,22 +219,6 @@
         },
         {
           "line": "• Develop reputation as an efficient service provider with high levels of accuracy"
-        }
-      ]
-    },
-    {
-      "employeer": "Deliv co",
-      "title": "Independent Contractor",
-      "info": [
-        { "line": "New York, New York" },
-        { "line": "Apr. 2016 to Jan. 2019" }
-      ],
-      "description": [
-        {
-          "line": "• Make deliveries and pick-ups of items as requested"
-        },
-        {
-          "line": "• Establish excellent working relationships at all delivery and pickup points"
         }
       ]
     }

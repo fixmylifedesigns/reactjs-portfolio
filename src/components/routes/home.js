@@ -43,14 +43,14 @@ export default class Homepage extends Component {
                   <h5>
                     •ReactJS •NodeJs •Express •LESS/SASS •Jest •React Testing
                     Library •Material UI •React Google Maps •React Google
-                    Location
+                    Location •NextJs •Gatsby •Bootstrap •React Native
                   </h5>
                 </div>
               </div>
               <div className="description">
                 <h1>
                   {" "}
-                  Hi, I'm Irving a Fullstack Javascript developer. I first got
+                  Hi, I'm Irving a Fullstack Developer. I first got
                   into coding in 2017 when I started building gaming handhelds
                   based off Raspberry PI single board computers. My love for
                   learning and creating has gotten me where I am today.{" "}
