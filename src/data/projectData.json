@@ -28,7 +28,7 @@
     "description": "Next Js Boilerplate easy for new developers who want to make an amazing project quickly. Also great for developers who don't know backend.",
     "repo": "https://github.com/fixmylife-boilerplates",
     "api": "https://documenter.getpostman.com/view/7133880/SVfQRUJX?version=latest",
-    "demo": "https://youtu.be/RnbW-0t9ixY"
+    "tutorial": "https://youtu.be/RnbW-0t9ixY"
   },
 
   {
@@ -38,7 +38,7 @@
     "description": "Tutorial on using firebase to save images to their server and receive a url in return.",
     "img": "https://github.com/fixmylifedesigns/reactjs-portfolio/blob/master/src/images/projects/firebaselogin.png?raw=true",
     "repo": "https://github.com/fixmylifedesigns/firebase_uploader",
-    "demo": "https://youtu.be/34f_SO7SWVA"
+    "tutorial": "https://youtu.be/34f_SO7SWVA"
   },
 
   {
