@@ -61,9 +61,9 @@ export default function MobileMenus(props) {
         aria-controls="customized-menu"
         aria-haspopup="true"
         variant="contained"
-        color="primary"
+        // color="primary"
         onClick={handleClick}
-        style={{ background: "white", color: "#282c34" }}
+        // style={{ background: "white", color: "#282c34" }}
       >
         Menu <MoreVertIcon style={{ color: "#282c34" }} />
       </Button>

@@ -9,7 +9,7 @@ import Navigationbar from "../navigation/navigationbar";
 export default class projects extends Component {
   render() {
     return (
-      <div className="projects-container">
+      <div className="projectsPage-container">
         <div>
           <Navigationbar />
         </div>

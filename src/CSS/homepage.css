@@ -26,14 +26,14 @@
 }
 .mobileMenu {
   display: none;
-  margin:0 auto;
+  margin: 0 auto;
 }
 @media only screen and (max-width: 700px) {
   .mobileMenu {
     display: inline;
   }
   .navigation {
-    display:none
+    display: none;
   }
 }
 @media only screen and (max-width: 500px) {
@@ -100,6 +100,14 @@
   text-align: center;
   /* border: red solid 1px; */
 }
+
+.projectButtonContainer {
+  margin: 10px auto;
+}
+.viewAllProjectsLink {
+  text-decoration: none;
+  display: none;
+}
 .navigation a {
   /* text-decoration: none; */
   color: white;
@@ -108,7 +116,10 @@
 }
 @media only screen and (max-width: 700px) {
   .navigation {
-    display:none
+    display: none;
+  }
+  .viewAllProjectsLink {
+    display: flex;
   }
 }
 @media only screen and (max-width: 500px) {
@@ -169,6 +180,7 @@
   margin: auto;
   flex-wrap: wrap;
 }
+
 .card {
   margin: auto;
   padding: 10px;
