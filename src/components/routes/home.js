@@ -6,6 +6,7 @@ import ProjectCard from "../material-ui/projects/projectCard";
 import ContactForm from "../material-ui/contactform";
 import MobileMenu from "../material-ui/mobilemenu";
 import projectsData from "../../data/projectData.json";
+import Typing from "react-typing-animation";
 
 export default class Homepage extends Component {
   render() {
@@ -17,7 +18,16 @@ export default class Homepage extends Component {
             <div className="all-content">
               <div className="intro-text">
                 <h1>Irving Duran </h1>
-                <h3>Full Stack Developer</h3>
+                <Typing>
+                 <h3> Artist
+                  {/* <Typing.Delay ms={1000} /> */}
+                  <Typing.Backspace count={6} />
+                  Creator
+                  {/* <Typing.Delay ms={1000} /> */}
+                  <Typing.Backspace count={7} />
+                  Full Stack Developer</h3>
+                </Typing>
+                
               </div>
               <img src={cartoon} alt="portrait" className="portrait" />
             </div>
@@ -50,10 +60,10 @@ export default class Homepage extends Component {
               <div className="description">
                 <h1>
                   {" "}
-                  Hi, I'm Irving a Fullstack Developer. I first got
-                  into coding in 2017 when I started building gaming handhelds
-                  based off Raspberry PI single board computers. My love for
-                  learning and creating has gotten me where I am today.{" "}
+                  Hi, I'm Irving a Fullstack Developer. I first got into coding
+                  in 2017 when I started building gaming handhelds based off
+                  Raspberry PI single board computers. My love for learning and
+                  creating has gotten me where I am today.{" "}
                 </h1>
               </div>
             </div>
