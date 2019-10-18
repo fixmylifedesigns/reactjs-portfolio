@@ -47,7 +47,7 @@ export default function ProjectCard(props) {
 const tutorial = () => {
     if (props.tutorial) {
       return (
-        <Button size="small" color="primary" href={props.demo}>
+        <Button size="small" color="primary" href={props.tutorial}>
           Tutorial
         </Button>
       );
