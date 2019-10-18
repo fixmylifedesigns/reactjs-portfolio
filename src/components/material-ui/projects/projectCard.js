@@ -44,6 +44,18 @@ export default function ProjectCard(props) {
     }
   };
 
+const tutorial = () => {
+    if (props.tutorial) {
+      return (
+        <Button size="small" color="primary" href={props.demo}>
+          Tutorial
+        </Button>
+      );
+    } else {
+      return "";
+    }
+  };
+
   return (
     <Card className={classes.card}>
       <CardActionArea href={props.url}>
@@ -71,6 +83,7 @@ export default function ProjectCard(props) {
         </Button>
         {apiDoc()} 
         {demo()}
+        {tutorial()}
       </CardActions>
     </Card>
   );
