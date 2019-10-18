@@ -19,11 +19,11 @@ const useStyles = makeStyles({
 
 export default function ProjectCard(props) {
   const classes = useStyles();
-
+  const project = props.project;
   const apiDoc = () => {
-    if (props.api) {
+    if (project.api) {
       return (
-        <Button size="small" color="primary" href={props.api}>
+        <Button size="small" color="primary" href={project.api}>
           API Doc
         </Button>
       );
@@ -33,9 +33,9 @@ export default function ProjectCard(props) {
   };
 
   const demo = () => {
-    if (props.demo) {
+    if (project.demo) {
       return (
-        <Button size="small" color="primary" href={props.demo}>
+        <Button size="small" color="primary" href={project.demo}>
           Demo
         </Button>
       );
@@ -44,10 +44,10 @@ export default function ProjectCard(props) {
     }
   };
 
-const tutorial = () => {
-    if (props.tutorial) {
+  const tutorial = () => {
+    if (project.tutorial) {
       return (
-        <Button size="small" color="primary" href={props.tutorial}>
+        <Button size="small" color="primary" href={project.tutorial}>
           Tutorial
         </Button>
       );
@@ -58,11 +58,11 @@ const tutorial = () => {
 
   return (
     <Card className={classes.card}>
-      <CardActionArea href={props.url}>
-        <CardMedia className={classes.media} image={props.img} />
+      <CardActionArea href={project.website}>
+        <CardMedia className={classes.media} image={project.img} />
         <CardContent>
           <Typography gutterBottom variant="h5" component="h2">
-            {props.title}
+            {project.title}
           </Typography>
           <Typography
             variant="body2"
@@ -70,20 +70,21 @@ const tutorial = () => {
             component="p"
             style={{ minHeight: "80px" }}
           >
-            {props.description}
+            {project.description}
           </Typography>
         </CardContent>
       </CardActionArea>
       <CardActions>
-        <Button size="small" color="primary" href={props.url}>
+        <Button size="small" color="primary" href={project.website}>
           Website
         </Button>
-        <Button size="small" color="primary" href={props.repo}>
+        <Button size="small" color="primary" href={project.repo}>
           Repo
         </Button>
-        {apiDoc()} 
+        {apiDoc()}
         {demo()}
         {tutorial()}
+        {console.log(project.tutorial)}
       </CardActions>
     </Card>
   );

@@ -4,6 +4,8 @@ import Button from "@material-ui/core/Button";
 import Menu from "@material-ui/core/Menu";
 import MenuItem from "@material-ui/core/MenuItem";
 import MoreVertIcon from "@material-ui/icons/MoreVert";
+import { Link } from "react-router-dom";
+
 
 const StyledMenu = withStyles({
   paper: {
@@ -75,14 +77,19 @@ export default function MobileMenus(props) {
         onClose={handleClose}
       >
         <StyledMenuItem>
-          <a href="/" style={linkStyle}>
+          <Link to="/" style={linkStyle}>
             Home
-          </a>
+          </Link>
         </StyledMenuItem>
         <StyledMenuItem>
-          <a href="/resume" style={linkStyle}>
-            Resume
-          </a>
+         
+            <Link to="/resume" style={linkStyle}>Resume</Link>
+      
+        </StyledMenuItem>
+        <StyledMenuItem>
+       
+           <Link to="/projects" style={linkStyle}>Projects</Link>
+         
         </StyledMenuItem>
         <StyledMenuItem>
           <a href="https://www.linkedin.com/in/irvingduran/" style={linkStyle}>

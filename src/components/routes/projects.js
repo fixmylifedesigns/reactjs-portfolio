@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 // import projectCards
 import "../../CSS/projectspage.css";
-
 import projectsData from "../../data/projectData.json";
 import ProjectCard from "../material-ui/projects/projectCard";
 import Navigationbar from "../navigation/navigationbar";
@@ -14,21 +13,15 @@ export default class projects extends Component {
           <Navigationbar />
         </div>
         <div className="projects">
-          {projectsData.map(project => {
-            return (
-              <div className="card">
-                <ProjectCard
-                  title={project.title}
-                  url={project.website}
-                  description={project.description}
-                  img={project.img}
-                  demo={project.demo}
-                  api={project.api}
-                  repo={project.repo}
-                />
-              </div>
-            );
-          })}
+          {projectsData
+            .filter(project => project.display > 0)
+            .map(project => {
+              return (
+                <div className="card">
+                  <ProjectCard project={project} />
+                </div>
+              );
+            })}
         </div>
       </div>
     );

@@ -38,7 +38,10 @@ export default function Homepage() {
   return (
     <div>
       <section id="header" className="intro section dark">
-        <MobileMenu classname="mobileMenu" />
+        <div>
+          <MobileMenu classname="mobileMenu" />
+        </div>
+        
         <div className="section-container">
           <div className="all-content">
             <div className="intro-text">
@@ -47,10 +50,10 @@ export default function Homepage() {
                 <h3>
                   {" "}
                   Artist
-                  {/* <Typing.Delay ms={1000} /> */}
+                  <Typing.Delay ms={1000} />
                   <Typing.Backspace count={6} />
                   Creator
-                  {/* <Typing.Delay ms={1000} /> */}
+                  <Typing.Delay ms={1000} />
                   <Typing.Backspace count={7} />
                   Full Stack Developer
                 </h3>
@@ -60,6 +63,7 @@ export default function Homepage() {
           </div>
           <nav className="navigation none">
             <Link to="/resume">Resume</Link>
+            <Link to="/projects">Projects</Link>
             <a href="https://www.linkedin.com/in/irvingduran/">LinkedIn</a>
             <a href="https://github.com/fixmylifedesigns">GitHub</a>
             <a href="https://www.fmlcycling.com/">Fixmylife Co.</a>
@@ -107,13 +111,7 @@ export default function Homepage() {
                 return (
                   <div className="card">
                     <ProjectCard
-                      title={project.title}
-                      url={project.website}
-                      description={project.description}
-                      img={project.img}
-                      demo={project.demo}
-                      api={project.api}
-                      repo={project.repo}
+                      project={project}
                     />
                   </div>
                 );

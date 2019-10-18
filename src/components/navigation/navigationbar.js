@@ -2,13 +2,16 @@ import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import "../../CSS/navigation.css";
 import MobileMenus from "../material-ui/mobilemenu"
+import cartoon from "../../images/cartoon.jpg";
+
 export default class Navigationbar extends Component {
   render() {
     return (
       <div className="Nav-container">
         <div>
           <Link to="/" className="nav-link-home">
-            Irving Duran
+            <img src={cartoon} style={{width:"40px", borderRadius:"100px"}}/>
+            {/* Irving Duran */}
           </Link>
         </div>
         <MobileMenus classname="navMobileMenu"/>
