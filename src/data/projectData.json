@@ -33,6 +33,14 @@
 
   {
     "display": 1,
+    "title": "React Native Map",
+    "img": "https://github.com/fixmylifedesigns/reactjs-portfolio/blob/master/src/images/projects/reactnativelocation.png?raw=true",
+    "description": "React Native map using built in gps to show your current location while also showing markers coming in from endpoints",
+    "repo": "https://github.com/fixmylifedesigns/react-native-location"
+  },
+
+  {
+    "display": 1,
     "title": "Firebase Image Uploader",
     "website": "https://firebaseuploader.netlify.com",
     "description": "Tutorial on using firebase to save images to their server and receive a url in return.",
