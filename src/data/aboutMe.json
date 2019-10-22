@@ -1,0 +1,19 @@
+{
+  "about_me": "Hi, I'm Irving a Fullstack Developer. I first got into coding in 2017 when I started building gaming handhelds based off Raspberry PI single board computers. My love for learning and creating has gotten me where I am today.",
+  "languages": ["HTML5,", "CSS3,", "Javascript ES5/ ES6,", "Python"],
+  "skills": [
+    "ReactJS,",
+    "NodeJs,",
+    "Express,",
+    "LESS/SASS,",
+    "Jest,",
+    "React Testing Library,",
+    "Gatsby,",
+    "Material UI,",
+    "React Google Maps,",
+    "React Google Location,",
+    "NextJs,",
+    "Bootstrap,",
+    "React Native"
+  ]
+}

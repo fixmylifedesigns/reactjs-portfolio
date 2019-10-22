@@ -1,7 +1,11 @@
-import React from "react";
+import React, { useEffect } from "react";
 import resumeData from "./resumeInfo.json";
 
 export default function MobileResponsiveResume() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  });
+
   return (
     <div className="newresume">
       <div className="left-side">

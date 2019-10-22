@@ -169,6 +169,12 @@
   /* border:solid black; */
   padding: 20px;
 }
+.aboutMePoints{
+ margin: 0px 0;
+ padding-left:3px;
+font-weight: bold;
+
+}
 .description {
   width: 60%;
   max-width: 400px;

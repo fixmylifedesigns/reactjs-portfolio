@@ -6,17 +6,19 @@ import ProjectCard from "../material-ui/projects/projectCard";
 import ContactForm from "../material-ui/contactform";
 import MobileMenu from "../material-ui/mobilemenu";
 import projectsData from "../../data/projectData.json";
+import aboutMe from "../../data/aboutMe.json";
 import Typing from "react-typing-animation";
 import Button from "@material-ui/core/Button";
 import { Link } from "react-router-dom";
-import ProjectSlider from '../material-ui/projects/projectSilder'
+import ProjectSlider from "../material-ui/projects/projectSilder";
 
-export default function Homepage() {
+export default function Homepage(props) {
   // const [allProjects, setAllProjects] = useState();
   const [projectPage, setProjectPage] = useState({ start: 0, end: 4 });
   const [pageButton, setPageButton] = useState({ down: null, up: null });
 
   useEffect(() => {
+    console.log(props)
     if (
       projectsData
         .filter(project => project.display > 0)
@@ -39,9 +41,9 @@ export default function Homepage() {
     <div>
       <section id="header" className="intro section dark">
         <div className="mobileMenuContainer">
-            <MobileMenu/>
+          <MobileMenu />
         </div>
-        
+
         <div className="section-container">
           <div className="all-content">
             <div className="intro-text">
@@ -77,25 +79,29 @@ export default function Homepage() {
             <div className="skills">
               <div className="Languages">
                 <h1>CODE LANGUAGES</h1>
-                <h5>•HTML5 •CSS3 •Javascript ES5/ ES6 •Python</h5>
+                <div style={{ display: "flex", flexWrap: "wrap" }}>
+                  {aboutMe.languages.map(e => (
+                    <p className="aboutMePoints">{e}</p>
+                  ))}
+                </div>
               </div>
               <div className="libraries">
                 <h1>FRAMEWORKS & LIBRARIES</h1>
-                <h5>
-                  •ReactJS •NodeJs •Express •LESS/SASS •Jest •React Testing
-                  Library •Material UI •React Google Maps •React Google Location
-                  •NextJs •Gatsby •Bootstrap •React Native
-                </h5>
+                <div
+                  style={{
+                    display: "flex",
+                    flexWrap: "wrap",
+                    marginBotton: "5px"
+                  }}
+                >
+                  {aboutMe.skills.map(e => (
+                    <p className="aboutMePoints">{e}</p>
+                  ))}
+                </div>
               </div>
             </div>
             <div className="description">
-              <h1>
-                {" "}
-                Hi, I'm Irving a Fullstack Developer. I first got into coding in
-                2017 when I started building gaming handhelds based off
-                Raspberry PI single board computers. My love for learning and
-                creating has gotten me where I am today.{" "}
-              </h1>
+              <h1>{aboutMe.about_me}</h1>
             </div>
           </div>
         </div>
@@ -110,15 +116,13 @@ export default function Homepage() {
               .map(project => {
                 return (
                   <div className="card">
-                    <ProjectCard
-                      project={project}
-                    />
+                    <ProjectCard project={project} />
                   </div>
                 );
               })}
           </div>
-          <div className="project-slider" style={{margin: "auto"}}>
-              <ProjectSlider/>
+          <div className="project-slider" style={{ margin: "auto" }}>
+            <ProjectSlider />
           </div>
           <div className="projectButtonContainer">
             <div className="navigation">
