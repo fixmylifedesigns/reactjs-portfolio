@@ -10,7 +10,7 @@ import Typography from "@material-ui/core/Typography";
 
 const useStyles = makeStyles({
   card: {
-    width: 325
+    maxWidth: 325
   },
   media: {
     height: 180
@@ -20,45 +20,32 @@ const useStyles = makeStyles({
 export default function ProjectCard(props) {
   const classes = useStyles();
   const project = props.project;
-  const apiDoc = () => {
-    if (project.api) {
-      return (
-        <Button size="small" color="primary" href={project.api}>
-          API Doc
-        </Button>
-      );
-    } else {
-      return "";
-    }
-  };
 
-  const demo = () => {
-    if (project.demo) {
-      return (
-        <Button size="small" color="primary" href={project.demo}>
-          Demo
-        </Button>
-      );
-    } else {
-      return "";
-    }
-  };
+  const ButtonFunction = (name, link) => (
+    <Button size="small" color="primary" href={link}>
+      {name}
+    </Button>
+  );
 
-  const tutorial = () => {
-    if (project.tutorial) {
-      return (
-        <Button size="small" color="primary" href={project.tutorial}>
-          Tutorial
-        </Button>
-      );
+  const demo = something => {
+    if (something === "Demo" && project.demo) {
+      return ButtonFunction(something, project.demo);
+    } else if (something === "Website" && project.website) {
+      return ButtonFunction(something, project.website);
+    } else if (something === "Repo" && project.repo) {
+      return ButtonFunction(something, project.repo);
+    } else if (something === "Tutorial" && project.tutorial) {
+      return ButtonFunction(something, project.tutorial);
+    } else if (something === "Api" && project.api) {
+      return ButtonFunction(something, project.api);
     } else {
-      return "";
+      return null;
     }
   };
 
   return (
     <Card className={classes.card}>
-      <CardActionArea href={project.website}>
+      <CardActionArea href={project.website || project.repo}>
         <CardMedia className={classes.media} image={project.img} />
         <CardContent>
           <Typography gutterBottom variant="h5" component="h2">
@@ -75,16 +62,11 @@ export default function ProjectCard(props) {
         </CardContent>
       </CardActionArea>
       <CardActions>
-        <Button size="small" color="primary" href={project.website}>
-          Website
-        </Button>
-        <Button size="small" color="primary" href={project.repo}>
-          Repo
-        </Button>
-        {apiDoc()}
-        {demo()}
-        {tutorial()}
-        {console.log(project.tutorial)}
+        {demo("Website")}
+        {demo("Repo")}
+        {demo("Api")}
+        {demo("Demo")}
+        {demo("Tutorial")}
       </CardActions>
     </Card>
   );

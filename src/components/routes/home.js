@@ -9,6 +9,7 @@ import projectsData from "../../data/projectData.json";
 import Typing from "react-typing-animation";
 import Button from "@material-ui/core/Button";
 import { Link } from "react-router-dom";
+import ProjectSlider from '../material-ui/projects/projectSilder'
 
 export default function Homepage() {
   // const [allProjects, setAllProjects] = useState();
@@ -21,7 +22,6 @@ export default function Homepage() {
         .filter(project => project.display > 0)
         .slice(projectPage.start + 4, projectPage.end + 4).length === 0
     ) {
-      console.log("wtf");
       setPageButton({ down: null, up: false });
     } else if (projectPage.start === 0) {
       setPageButton({ down: false, up: true });
@@ -38,8 +38,8 @@ export default function Homepage() {
   return (
     <div>
       <section id="header" className="intro section dark">
-        <div>
-          <MobileMenu classname="mobileMenu" />
+        <div className="mobileMenuContainer">
+            <MobileMenu/>
         </div>
         
         <div className="section-container">
@@ -116,6 +116,9 @@ export default function Homepage() {
                   </div>
                 );
               })}
+          </div>
+          <div className="project-slider" style={{margin: "auto"}}>
+              <ProjectSlider/>
           </div>
           <div className="projectButtonContainer">
             <div className="navigation">

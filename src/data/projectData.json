@@ -7,7 +7,7 @@
     "description": "Independent Project, Web application that alows users to create an account and make posts to report stolen bicycles. Work in progress.",
     "repo": "https://github.com/brokenulock",
     "api": "https://documenter.getpostman.com/view/7133880/SVfMUAdJ?version=latest",
-    "demo": "https://youtu.be/reFElyEkXPg"
+    "demo": "https://youtu.be/xDORl-csvqU"
   },
   {
     "display": 1,
@@ -34,7 +34,7 @@
   {
     "display": 1,
     "title": "React Native Map",
-    "img": "https://github.com/fixmylifedesigns/reactjs-portfolio/blob/master/src/images/projects/reactnativelocation.png?raw=true",
+    "img": "https://github.com/fixmylifedesigns/reactjs-portfolio/blob/master/src/images/projects/reactnativelocation.PNG?raw=true",
     "description": "React Native map using built in gps to show your current location while also showing markers coming in from endpoints",
     "repo": "https://github.com/fixmylifedesigns/react-native-location"
   },
