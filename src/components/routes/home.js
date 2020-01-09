@@ -148,7 +148,7 @@ export default function Homepage(props) {
 
             <Link to="/projects" className="viewAllProjectsLink">
               <Button to="/projects" variant="contained">
-                View All Porjects
+                View All Projects 
               </Button>
             </Link>
           </div>
