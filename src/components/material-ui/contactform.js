@@ -4,7 +4,7 @@ import { makeStyles } from "@material-ui/core/styles";
 import TextField from "@material-ui/core/TextField";
 // import Icon from "@material-ui/core/Icon";
 import Button from "@material-ui/core/Button";
-// import axios from "axios";
+import axios from "axios";
 
 const useStyles = makeStyles(theme => ({
   button: {
@@ -28,41 +28,41 @@ const useStyles = makeStyles(theme => ({
 
 export default function ContactForm() {
   const classes = useStyles();
-  // const [values, setValues] = React.useState({
-  //   name: "",
-  //   email: "",
-  //   message: "",
-  //   telephone: ""
-  // });
+  const [values, setValues] = React.useState({
+    to: "ijd.irving@gmail.com",
+    url: window.location.hostname,
+    name: "",
+    email: "",
+    message: "",
+    phone: ""
+  });
+console.log(values)
+  const handleChange =  e => {
+    setValues({ ...values, [e.target.name]: e.target.value });
+  };
 
-  // const handleChange = name => event => {
-  //   setValues({ ...values, [name]: event.target.value });
-  // };
+  const handleSubmit = e => {
+    e.preventDefault();
 
-  // const handleSubmit = e => {
-  //   // e.prevent.default();
-
-  //   axios
-  //     .post(
-  //       `https://getsimpleform.com/messages?form_api_token=${process.env.REACT_APP_FORM_TOKEN}`,
-  //       values
-  //     )
-  //     .then(res => {
-  //       console.log(res);
-  //       alert("thank you");
-  //     }).catch(err => {
-  //       console.log(err)
-  //     })
-  // };
+    axios
+      .post(
+        `https://fixmylife-next-api.herokuapp.com/api/mailer/`,
+        values
+      )
+      .then(res => {
+        console.log(res);
+        // alert("thank you");
+      }).catch(err => {
+        console.log(err)
+      })
+  };
 
   return (
     <form
       className="flex"
       noValidate
       autoComplete="off"
-      // onSubmit={handleSubmit}
-      action={"https://formspree.io/ijd.irving@gmail.com"}
-      method="post"
+      onSubmit={handleSubmit}
     >
       <TextField
         id="filled-dense"
@@ -70,9 +70,9 @@ export default function ContactForm() {
         className={clsx(classes.textField, classes.dense)}
         margin="Name"
         type="text"
-        name="fullname"
+        name="name"
         variant="filled"
-        // onChange={handleChange}
+        onChange={handleChange}
       />
 
       <TextField
@@ -83,7 +83,7 @@ export default function ContactForm() {
         name="email"
         margin="email"
         variant="filled"
-        // onChange={handleChange}
+        onChange={handleChange}
       />
 
       <TextField
@@ -91,10 +91,10 @@ export default function ContactForm() {
         label="Phone Number (optional)"
         className={clsx(classes.textField, classes.dense)}
         type="telephone"
-        name="telephone"
+        name="phone"
         margin="telephone"
         variant="filled"
-        // onChange={handleChange}
+        onChange={handleChange}
       />
 
       <TextField
@@ -106,7 +106,7 @@ export default function ContactForm() {
         multiline
         rowsMax="4"
         name="message"
-        // onChange={handleChange}
+        onChange={handleChange}
       />
       <Button
         variant="contained"
