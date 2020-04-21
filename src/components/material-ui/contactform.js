@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import clsx from "clsx";
 import { makeStyles } from "@material-ui/core/styles";
 import TextField from "@material-ui/core/TextField";
@@ -6,55 +6,67 @@ import TextField from "@material-ui/core/TextField";
 import Button from "@material-ui/core/Button";
 import axios from "axios";
 
-const useStyles = makeStyles(theme => ({
+const useStyles = makeStyles((theme) => ({
   button: {
-    margin: theme.spacing(1)
+    margin: theme.spacing(1),
   },
   container: {
     display: "flex",
-    flexWrap: "wrap"
+    flexWrap: "wrap",
   },
   textField: {
     marginLeft: theme.spacing(1),
-    marginRight: theme.spacing(1)
+    marginRight: theme.spacing(1),
   },
   dense: {
-    marginTop: 16
+    marginTop: 16,
   },
   menu: {
-    width: 200
-  }
+    width: 200,
+  },
 }));
 
 export default function ContactForm() {
   const classes = useStyles();
-  const [values, setValues] = React.useState({
+  const [values, setValues] = useState({
     to: "ijd.irving@gmail.com",
     url: window.location.hostname,
     name: "",
     email: "",
     message: "",
-    phone: ""
+    phone: "",
   });
-console.log(values)
-  const handleChange =  e => {
+  const [error, setError] = useState(false);
+  console.log(values);
+  const handleChange = (e) => {
+    setError(false)
     setValues({ ...values, [e.target.name]: e.target.value });
   };
 
-  const handleSubmit = e => {
+  const handleSubmit = (e) => {
     e.preventDefault();
-
-    axios
-      .post(
-        `https://fixmylife-next-api.herokuapp.com/api/mailer/`,
-        values
-      )
-      .then(res => {
-        console.log(res);
-        // alert("thank you");
-      }).catch(err => {
-        console.log(err)
-      })
+    let { name, email, message } = values;
+    if (name == "" || email == "" || message == "") {
+      setError(true);
+    } else {
+      axios
+        .post(`https://fixmylife-next-api.herokuapp.com/api/mailer/`, values)
+        .then((res) => {
+          console.log(res);
+          alert("thank you");
+          setValues({
+            to: "ijd.irving@gmail.com",
+            url: window.location.hostname,
+            name: "",
+            email: "",
+            message: "",
+            phone: "",
+          });
+        })
+        .catch((err) => {
+          console.log(err);
+        });
+    }
   };
 
   return (
@@ -64,11 +76,16 @@ console.log(values)
       autoComplete="off"
       onSubmit={handleSubmit}
     >
+      <div className={`contactAlertMessage ${error ? "" : "hidden"}`}>
+        <h5>PLEASE FILL ALL REQUIRED FIELDS</h5>
+      </div>
+
       <TextField
         id="filled-dense"
-        label="Name"
+        label="Name (Required)"
         className={clsx(classes.textField, classes.dense)}
         margin="Name"
+        value={values.name}
         type="text"
         name="name"
         variant="filled"
@@ -77,8 +94,9 @@ console.log(values)
 
       <TextField
         id="filled-dense"
-        label="Email"
+        label="Email (Required)"
         className={clsx(classes.textField, classes.dense)}
+        value={values.email}
         type="email"
         name="email"
         margin="email"
@@ -90,6 +108,7 @@ console.log(values)
         id="filled-dense"
         label="Phone Number (optional)"
         className={clsx(classes.textField, classes.dense)}
+        value={values.phone}
         type="telephone"
         name="phone"
         margin="telephone"
@@ -99,8 +118,9 @@ console.log(values)
 
       <TextField
         id="filled-dense-multiline"
-        label="Message"
+        label="Message (Required)"
         className={clsx(classes.textField, classes.dense)}
+        value={values.message}
         margin="text"
         variant="filled"
         multiline
@@ -116,7 +136,6 @@ console.log(values)
         style={{ background: "#282c34" }}
       >
         Send
-        {/* <Icon className={classes.rightIcon}>send</Icon> */}
       </Button>
     </form>
   );

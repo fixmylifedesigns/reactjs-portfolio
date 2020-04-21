@@ -26,12 +26,12 @@
 }
 .mobileMenuContainer {
   width: 100px;
-  left:50%;
+  left: 50%;
   margin-left: -50px;
   position: fixed;
-  display:none;
+  display: none;
   justify-content: center;
-  z-index: 1
+  z-index: 1;
 }
 @media only screen and (max-width: 700px) {
   .mobileMenuContainer {
@@ -169,11 +169,10 @@
   /* border:solid black; */
   padding: 20px;
 }
-.aboutMePoints{
- margin: 0px 0;
- padding-left:3px;
-font-weight: bold;
-
+.aboutMePoints {
+  margin: 0px 0;
+  padding-left: 3px;
+  font-weight: bold;
 }
 .description {
   width: 60%;
@@ -259,4 +258,19 @@ font-weight: bold;
   .form-container {
     padding: 100px 40px;
   }
+}
+
+.contactAlertMessage {
+  background: red;
+  color: white;
+  text-align: center;
+  margin:0 10px;
+  padding: 0 5px;
+}
+
+.contactAlertMessage h5 {
+  margin: 0px;
+}
+.hidden {
+  visibility: hidden;
 }
