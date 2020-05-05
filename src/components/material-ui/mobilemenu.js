@@ -6,36 +6,35 @@ import MenuItem from "@material-ui/core/MenuItem";
 import MoreVertIcon from "@material-ui/icons/MoreVert";
 import { Link } from "react-router-dom";
 
-
 const StyledMenu = withStyles({
   paper: {
-    border: "1px solid #d3d4d5"
-  }
-})(props => (
+    border: "1px solid #d3d4d5",
+  },
+})((props) => (
   <Menu
     elevation={0}
     getContentAnchorEl={null}
     anchorOrigin={{
       vertical: "bottom",
-      horizontal: "center"
+      horizontal: "center",
     }}
     transformOrigin={{
       vertical: "top",
-      horizontal: "center"
+      horizontal: "center",
     }}
     {...props}
   />
 ));
 
-const StyledMenuItem = withStyles(theme => ({
+const StyledMenuItem = withStyles((theme) => ({
   root: {
     "&:focus": {
       backgroundColor: theme.palette.primary.main,
       "& .MuiListItemIcon-root, & .MuiListItemText-primary": {
-        color: theme.palette.common.white
-      }
-    }
-  }
+        color: theme.palette.common.white,
+      },
+    },
+  },
 }))(MenuItem);
 
 export default function MobileMenus(props) {
@@ -54,7 +53,7 @@ export default function MobileMenus(props) {
     color: "#282c34",
     fontWeight: "bold",
     textAlign: "center",
-    margin: "auto"
+    margin: "auto",
   };
 
   return (
@@ -82,14 +81,14 @@ export default function MobileMenus(props) {
           </Link>
         </StyledMenuItem>
         <StyledMenuItem>
-         
-            <Link to="/resume" style={linkStyle}>Resume</Link>
-      
+          <Link to="/resume" style={linkStyle}>
+            Resume
+          </Link>
         </StyledMenuItem>
         <StyledMenuItem>
-       
-           <Link to="/projects" style={linkStyle}>Projects</Link>
-         
+          <Link to="/projects" style={linkStyle}>
+            Projects
+          </Link>
         </StyledMenuItem>
         <StyledMenuItem>
           <a href="https://www.linkedin.com/in/irvingduran/" style={linkStyle}>
@@ -104,6 +103,11 @@ export default function MobileMenus(props) {
         <StyledMenuItem>
           <a href="https://www.fmlcycling.com/" style={linkStyle}>
             Fixmylife Co.
+          </a>
+        </StyledMenuItem>
+        <StyledMenuItem>
+          <a href="https://www.app.duranirving.com" style={linkStyle}>
+          Login
           </a>
         </StyledMenuItem>
       </StyledMenu>
