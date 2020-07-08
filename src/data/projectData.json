@@ -1,6 +1,24 @@
 [
   {
     "display": 1,
+    "title": "Fmlcycling E-com Store",
+    "website": "https://www.fmlcycling.com/",
+    "img": "https://github.com/fixmylifedesigns/reactjs-portfolio/blob/master/src/images/projects/carpool.png?raw=true",
+    "description": "Independent Project, E-commerce Website built for personal business. Connected to my e-commerce platform and taking payments with paypal.",
+    "repo": "https://github.com/fixmylifeShop/fixmylife-frontend",
+    "api": "https://documenter.getpostman.com/view/7133880/T17JA7YV?version=latest"
+  },
+  {
+    "display": 1,
+    "title": "E-commerce Platform",
+    "website": "https://app.duranirving.com/",
+    "img": "https://github.com/fixmylifedesigns/reactjs-portfolio/blob/master/src/images/projects/carpool.png?raw=true",
+    "description": "Independent Project, E-commerce platform with backend that allows users to connect Frontend of their choice for there online store.",
+    "repo": "https://github.com/fixmylifeShop/",
+    "api": "https://documenter.getpostman.com/view/7133880/T17JA7YV?version=latest"
+  },
+  {
+    "display": 1,
     "title": "Carpool App",
     "website": "https://carpoolapp.netlify.com/",
     "img": "https://github.com/fixmylifedesigns/reactjs-portfolio/blob/master/src/images/projects/carpool.png?raw=true",
