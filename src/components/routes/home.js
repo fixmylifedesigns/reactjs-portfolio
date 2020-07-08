@@ -18,7 +18,7 @@ export default function Homepage(props) {
   const [pageButton, setPageButton] = useState({ down: null, up: null });
 
   useEffect(() => {
-    console.log(props)
+    // console.log(props)
     if (
       projectsData
         .filter(project => project.display > 0)

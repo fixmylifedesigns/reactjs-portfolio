@@ -46,7 +46,7 @@ export default function ContactForm() {
   const handleSubmit = (e) => {
     e.preventDefault();
     let { name, email, message } = values;
-    if (name == "" || email == "" || message == "") {
+    if (name === "" || email === "" || message === "") {
       setError(true);
     } else {
       axios

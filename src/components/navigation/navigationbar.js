@@ -10,7 +10,7 @@ export default class Navigationbar extends Component {
       <div className="Nav-container">
         <div>
           <Link to="/" className="nav-link-home">
-            <img src={cartoon} style={{width:"40px", borderRadius:"100px"}}/>
+            <img src={cartoon} style={{width:"40px", borderRadius:"100px"}} alt="logo"/>
             {/* Irving Duran */}
           </Link>
         </div>
