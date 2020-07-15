@@ -64,7 +64,8 @@ export default function Homepage(props) {
             <img src={cartoon} alt="portrait" className="portrait" />
           </div>
           <nav className="navigation none">
-            <Link to="/resume">Resume</Link>
+            {/* <Link to="/resume">Resume</Link> */}
+            <a href="https://resume.creddle.io/resume/6v3z8k47n2q">Resume</a>
             <Link to="/projects">Projects</Link>
             <a href="https://www.linkedin.com/in/irvingduran/">LinkedIn</a>
             <a href="https://github.com/fixmylifedesigns">GitHub</a>

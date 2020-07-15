@@ -81,9 +81,10 @@ export default function MobileMenus(props) {
           </Link>
         </StyledMenuItem>
         <StyledMenuItem>
-          <Link to="/resume" style={linkStyle}>
+          {/* <Link to="/resume" style={linkStyle}>
             Resume
-          </Link>
+          </Link> */}
+          <a href="https://resume.creddle.io/resume/6v3z8k47n2q" style={linkStyle}>Resume</a>
         </StyledMenuItem>
         <StyledMenuItem>
           <Link to="/projects" style={linkStyle}>
