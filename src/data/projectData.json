@@ -1,6 +1,16 @@
 [
   {
     "display": 1,
+    "title": "Angular E-com Store",
+    "website": "https://angular.fmlcycling.com/",
+    "img": "https://github.com/fixmylifedesigns/reactjs-portfolio/blob/master/src/images/projects/fmlcycling.png?raw=true",
+    "description": "Rebuilt my E-commerce shop in Angular. Using the my e-commerce backend platform and alot of the css from my previous ReactJs build. fmlcycling.com",
+    "repo": "https://github.com/fixmylifedesigns/fmlshopangular",
+    "api": "https://documenter.getpostman.com/view/7133880/T17JA7YV?version=latest",
+    "demo": "https://www.linkedin.com/posts/irvingduran_so-i-started-working-on-a-project-with-angular-activity-6701652240777715712-Fc4B"
+  },
+  {
+    "display": 1,
     "title": "Fmlcycling E-com Store",
     "website": "https://www.fmlcycling.com/",
     "img": "https://github.com/fixmylifedesigns/reactjs-portfolio/blob/master/src/images/projects/fmlcycling.png?raw=true",
