@@ -156,18 +156,18 @@ export default function Homepage(props) {
         </div>
       </section>
       <section id="contact" className="section light">
-        <div className="section-container">
+        {/* <div className="section-container">
           <h1 className="title font-dark">CONTACT</h1>
-        </div>
+        </div> */}
         <div className="map-contact-container">
           <div className="googlemap">
-            <h1 className="center">Where to find me</h1>
+            <h1 className="center">Where to find me, I'm also open to relocating.</h1>
             <Map />
           </div>
-          <div className="form-container">
+          {/* <div className="form-container">
             <h1 className="center">Get in touch</h1>
             <ContactForm />
-          </div>
+          </div> */}
         </div>
       </section>
     </div>
