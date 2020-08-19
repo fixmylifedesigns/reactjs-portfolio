@@ -3,7 +3,7 @@
     "display": 1,
     "title": "Angular E-com Store",
     "website": "https://angular.fmlcycling.com/",
-    "img": "https://github.com/fixmylifedesigns/reactjs-portfolio/blob/master/src/images/projects/fmlcycling.png?raw=true",
+    "img": "https://github.com/fixmylifedesigns/reactjs-portfolio/blob/master/src/images/projects/angularfml.PNG?raw=true",
     "description": "Rebuilt my E-commerce shop in Angular. Using the my e-commerce backend platform and alot of the css from my previous ReactJs build. fmlcycling.com",
     "repo": "https://github.com/fixmylifedesigns/fmlshopangular",
     "api": "https://documenter.getpostman.com/view/7133880/T17JA7YV?version=latest",
